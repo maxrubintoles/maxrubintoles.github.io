@@ -1,1 +1,462 @@
-<!DOCTYPE html> <html lang="en"> <head>     <meta charset="UTF-8">     <meta name="viewport" content="width=device-width, initial-scale=1.0">     <title>Max Rubin-Toles</title>     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">     <style>         :root {             --navy-blue: #3C4663;             --mauve-gray: #B5A8A2;             --off-white: #EAE4DA;             --light-lavender: #CFD3E6;         }         body {             background-color: var(--navy-blue);             color: var(--off-white);         }         .bg-custom-mauve {             background-color: var(--mauve-gray);         }         .text-custom-lavender {             color: var(--light-lavender);         }         .hover-custom-lavender:hover {             color: var(--light-lavender);         }     </style> </head> <body>     <div class="max-w-4xl mx-auto p-6 sm:p-8 md:p-12">         <!-- Header Section -->         <header class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8 mb-12">             <img src="images/profile.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full shadow-lg">                          <div class="flex-1">                 <h1 class="text-4xl font-bold mb-4">Max Rubin-Toles</h1>                 <div class="flex flex-wrap gap-4 text-custom-lavender">                     <a href="https://github.com/maxrubintoles" target="_blank" class="flex items-center hover:opacity-80 transition-opacity">                         <i class="fab fa-github mr-2"></i>                         GitHub                     </a>                     <a href="mailto:maxonbion@gmail.com" class="flex items-center hover:opacity-80 transition-opacity">                         <i class="far fa-envelope mr-2"></i>                         maxonbion@gmail.com                     </a>                 </div>             </div>         </header>         <!-- Landscape Strip -->         <div class="w-full h-40 mb-12 rounded-lg overflow-hidden">             <img src="images/landscape.jpg" alt="Landscape" class="w-full h-full object-cover">         </div>         <!-- Main Content -->         <main class="space-y-12 bg-custom-mauve rounded-lg p-8">             <!-- Bio Section -->             <section>                 <h2 class="text-2xl font-semibold mb-4">About Me</h2>                 <div class="space-y-4">                     <p>I'm a senior at Penn interested in understanding AI systems and making them reliable. I'm currently applying to CS PhD programs for Fall 2025.</p>                     <p>I've been fortunate to work with Professors                         <a href="https://www.surbhigoel.com/" target="_blank" class="text-custom-lavender hover-custom-lavender">Surbhi Goel</a> and                         <a href="https://www.cis.upenn.edu/~aaroth/" target="_blank" class="text-custom-lavender hover-custom-lavender">Aaron Roth</a> as well as                         <a href="https://mayapalgambhir.com/" target="_blank" class="text-custom-lavender hover-custom-lavender">Maya Gambhir</a> and                         <a href="https://www.keshavramji.com/" target="_blank" class="text-custom-lavender hover-custom-lavender">Keshav Ramji</a>.                     </p>                     <p>I also enjoy Magic: The Gathering, indoor bouldering, writing (substack:                         <a href="https://maxonbion.substack.com/subscribe" target="_blank" class="text-custom-lavender hover-custom-lavender">Minimax</a>), and                         <a href="https://sites.google.com/view/maxrubin-toles/home" target="_blank" class="text-custom-lavender hover-custom-lavender">drawing</a>.                     </p>                 </div>             </section>             <!-- Publications Section -->             <section>                 <h2 class="text-2xl font-semibold mb-4">Publications</h2>                 <div class="rounded-lg">                     <article>                         <p>                             <strong>MRT</strong>*, Maya Gambhir*, Keshav Ramji, Surbhi Goel, Aaron Roth.<br>                             <a href="https://drive.google.com/file/d/1hQgH09K1pw1HTN3xQucF2OuQN9orQ9Kl/view?usp=sharing"                                target="_blank"                                class="text-custom-lavender hover-custom-lavender">                                 Conformal Language Model Reasoning with Coherent Factuality                             </a>                             <span class="block mt-2 text-sm opacity-90">                                 Accepted at ICLR 2025 Conference.                                 *equal contribution                             </span>                         </p>                     </article>                 </div>             </section>         </main>         <!-- Footer -->         <footer class="mt-16 pt-8 border-t border-opacity-20 border-custom-lavender">             <div class="flex justify-center">                 <a href="https://drive.google.com/file/d/1I8CxwZltE6E88TtiOpjGr6TKOtTZF-te/view?usp=sharing"                    target="_blank"                    class="inline-flex items-center px-4 py-2 bg-opacity-20 bg-white text-custom-lavender rounded-md hover:bg-opacity-30 transition-colors">                     <i class="far fa-file-alt mr-2"></i>                     View CV                 </a>             </div>         </footer>     </div> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Max Rubin-Toles is a G2 Computer Science PhD student at Harvard SEAS, working at the intersection of AI and economics.">
+  <meta name="theme-color" content="#30394f">
+  <title>Max Rubin-Toles · Harvard CS</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #30394f;
+      --text: #f1eee8;
+      --muted: #c3c8d3;
+      --accent: #d1d5ef;
+      --rule: #596176;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-color: #8f98b4;
+      text-underline-offset: .2em;
+      text-decoration-thickness: 1px;
+    }
+
+    a:hover {
+      color: #fff;
+      text-decoration-color: currentColor;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 5px;
+      border-radius: 2px;
+    }
+
+    p { margin: 0 0 1.1em; }
+    p:last-child { margin-bottom: 0; }
+
+    .page {
+      width: min(100% - 80px, 940px);
+      margin: 0 auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 20px;
+      padding: 8px 16px;
+      background: var(--text);
+      color: var(--background);
+    }
+
+    .skip-link:focus { top: 12px; }
+
+    .masthead {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 150px;
+      align-items: center;
+      gap: 48px;
+      padding: 68px 0 42px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: .14em;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(36px, 5vw, 56px);
+      line-height: 1.13;
+      font-weight: 400;
+      letter-spacing: -.035em;
+    }
+
+    .subtitle {
+      margin: 0 0 21px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 24px;
+      font-size: 14px;
+    }
+
+    .contact a {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .contact a:hover { border-color: currentColor; }
+
+    .portrait {
+      display: block;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .section {
+      display: grid;
+      grid-template-columns: 130px minmax(0, 1fr);
+      gap: 28px;
+      padding: 38px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h2 {
+      margin: 3px 0 0;
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .bio { max-width: 700px; }
+
+    .publication + .publication {
+      margin-top: 28px;
+      padding-top: 27px;
+      border-top: 1px solid #485166;
+    }
+
+    .publication h3 {
+      margin: 0 0 7px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 23px;
+      font-weight: 400;
+      line-height: 1.35;
+      letter-spacing: -.01em;
+    }
+
+    .publication h3 a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .publication h3 a:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: .15em;
+    }
+
+    .authors {
+      margin-bottom: 9px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .authors strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .paper-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px 18px;
+      font-size: 13px;
+    }
+
+    .venue {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .note {
+      margin: 7px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .personal {
+      padding-bottom: 32px;
+      border-bottom: 0;
+    }
+
+    .landscape {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+
+    .landscape img {
+      display: block;
+      width: 100%;
+      height: 165px;
+      object-fit: cover;
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px 24px;
+      padding: 24px 0 38px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    footer p { margin: 0; }
+
+    @media (max-width: 640px) {
+      .page { width: calc(100% - 40px); }
+
+      .masthead {
+        grid-template-columns: minmax(0, 1fr) 86px;
+        gap: 18px;
+        padding: 36px 0 28px;
+        align-items: start;
+      }
+
+      .portrait {
+        width: 86px;
+        height: 100px;
+        margin-top: 4px;
+      }
+
+      .eyebrow {
+        font-size: 10px;
+        letter-spacing: .1em;
+      }
+
+      h1 {
+        font-size: 38px;
+        max-width: 290px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 17px;
+      }
+
+      .contact {
+        gap: 8px 18px;
+        font-size: 13px;
+      }
+
+      .section {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 28px 0;
+      }
+
+      .publication h3 { font-size: 22px; }
+      .personal { padding-bottom: 26px; }
+      .landscape img { height: 130px; }
+      footer { padding-bottom: 26px; }
+    }
+
+    @media (max-width: 380px) {
+      h1 { font-size: 33px; }
+
+      .masthead {
+        grid-template-columns: minmax(0, 1fr) 72px;
+        gap: 14px;
+      }
+
+      .portrait {
+        width: 72px;
+        height: 86px;
+      }
+
+      .contact {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      :root {
+        color-scheme: light;
+        --background: #fff;
+        --text: #202535;
+        --muted: #4b5261;
+        --accent: #30394f;
+        --rule: #ccc;
+      }
+
+      .page { width: 100%; }
+      .masthead { padding-top: 0; }
+      .landscape { display: none; }
+      .section { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="page">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">Computer Science · Harvard SEAS</p>
+        <h1>Max <span style="white-space: nowrap">Rubin-Toles</span></h1>
+        <p class="subtitle">G2 PhD student · AI &amp; economics</p>
+
+        <nav class="contact" aria-label="Contact and profiles">
+          <a href="mailto:maxonbion@gmail.com">maxonbion@gmail.com</a>
+          <a href="https://github.com/maxrubintoles">GitHub</a>
+          <a href="https://drive.google.com/file/d/1I8CxwZltE6E88TtiOpjGr6TKOtTZF-te/view?usp=sharing">
+            CV <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
+      </div>
+
+      <img
+        class="portrait"
+        src="images/profile.jpg"
+        alt="Max Rubin-Toles"
+        width="150"
+        height="150"
+      >
+    </header>
+
+    <main id="main">
+      <section class="section" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+
+        <div class="bio">
+          <p>
+            I’m a second-year (G2) PhD student in Computer Science at
+            Harvard SEAS, where I’m very fortunate to be advised by
+            <a href="https://procaccia.info/">Ariel Procaccia</a>.
+            My research interests lie at the intersection of AI and economics.
+          </p>
+
+          <p>
+            I’m currently supported by an NSF Graduate Research Fellowship
+            (NSF GRFP).
+          </p>
+
+          <p>
+            Previously, I graduated <em>summa cum laude</em> from the
+            University of Pennsylvania, where I received the Computer
+            Science Award, given to one student per graduating class.
+            At Penn, I worked with
+            <a href="https://www.surbhigoel.com/">Surbhi Goel</a> and
+            <a href="https://www.cis.upenn.edu/~aaroth/">Aaron Roth</a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Publications</h2>
+
+        <div>
+          <article class="publication">
+            <h3>
+              <a href="https://www.cs.toronto.edu/~nisarg/papers/bridging.pdf">
+                The Structure of Bridging
+              </a>
+            </h3>
+
+            <p class="authors">
+              Carter Blair, Jakob de Raaij, Ariel D. Procaccia,
+              <strong>Maxon Rubin-Toles</strong>, Nisarg Shah,
+              Michelle Si, Serena Wang
+            </p>
+
+            <div class="paper-meta">
+              <span class="venue">EC 2026</span>
+              <a
+                href="https://www.cs.toronto.edu/~nisarg/papers/bridging.pdf"
+                aria-label="Read The Structure of Bridging (PDF)"
+              >
+                Paper <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="publication">
+            <h3>
+              <a href="https://drive.google.com/file/d/1hQgH09K1pw1HTN3xQucF2OuQN9orQ9Kl/view?usp=sharing">
+                Conformal Language Model Reasoning with Coherent Factuality
+              </a>
+            </h3>
+
+            <p class="authors">
+              <strong>Max Rubin-Toles*</strong>, Maya Gambhir*,
+              Keshav Ramji, Surbhi Goel, Aaron Roth
+            </p>
+
+            <div class="paper-meta">
+              <span class="venue">ICLR 2025</span>
+              <a
+                href="https://drive.google.com/file/d/1hQgH09K1pw1HTN3xQucF2OuQN9orQ9Kl/view?usp=sharing"
+                aria-label="Read Conformal Language Model Reasoning with Coherent Factuality"
+              >
+                Paper <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <p class="note">* Equal contribution.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section personal" aria-labelledby="personal-heading">
+        <h2 id="personal-heading">Beyond research</h2>
+
+        <p>
+          I also enjoy Magic: The Gathering, indoor bouldering,
+          <a href="https://maxonbion.substack.com/subscribe">writing at Minimax</a>,
+          and
+          <a href="https://sites.google.com/view/maxrubin-toles/home">drawing</a>.
+        </p>
+      </section>
+
+      <figure class="landscape">
+        <img
+          src="images/landscape.jpg"
+          alt=""
+          width="940"
+          height="165"
+          loading="lazy"
+        >
+      </figure>
+    </main>
+
+    <footer>
+      <p>Max Rubin-Toles</p>
+      <p>Harvard John A. Paulson School of Engineering and Applied Sciences</p>
+    </footer>
+  </div>
+</body>
+</html>
